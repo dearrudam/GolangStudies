@@ -1,0 +1,6 @@
+package: github.com/dearrudam/GolangStudies/fuzzy-studies
+import:
+- package: github.com/renstrom/fuzzysearch
+  version: v1.0.0
+  subpackages:
+  - fuzzy

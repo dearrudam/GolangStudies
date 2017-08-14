@@ -25,3 +25,7 @@ _testmain.go
 *.prof
 .idea/
 
+# ignoring the vendor and glide.lock
+vendor/
+glide.lock
+tn_customer_data_dev.txt
