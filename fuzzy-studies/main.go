@@ -9,13 +9,12 @@ import (
 	"unicode/utf8"
 )
 
-func main()  {
+func main() {
 
 	//fmt.Println(fuzzy.RankFind("LARRY TOMAS", []string{"LARRY THOMAS"}))
-	fmt.Println(Levenshtein("LARRY THOMAS", "LARRY TOMAS"))
+	fmt.Println(Levenshtein("Hello", "Hallo"))
 
 }
-
 
 func Levenshtein(a, b string) int {
 	f := make([]int, utf8.RuneCountInString(b)+1)
@@ -59,7 +58,6 @@ func M1() {
 
 	//fmt.Println(contentTxt)
 
-
 	var names []string = strings.Split(contentTxt, "\n")
 
 	fmt.Println(len(names))
@@ -73,7 +71,7 @@ func M1() {
 	rankingValues := fuzzy.RankFind(term, matchedValues)
 	sort.Sort(rankingValues)
 
-	for _,value:=range rankingValues {
+	for _, value := range rankingValues {
 		fmt.Println(value)
 	}
 
